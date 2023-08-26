@@ -2,18 +2,15 @@
 
 void    check_args(int argc, char **argv)
 {
-    (void)argc;
-    (void)argv;
+    if (argc != 2)
+        display_error();
 }
-
-
 
 
 int main(int argc, char **argv)
 {
     check_args(argc, argv);
-    get_input();
-
+    get_input(argv[1]);
 
     return (0);
 }
