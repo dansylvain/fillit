@@ -4,6 +4,7 @@ void    check_args(int argc, char **argv)
 {
     if (argc != 2)
         display_error();
+    (void)argv;
 }
 
 
