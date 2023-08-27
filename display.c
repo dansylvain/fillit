@@ -11,6 +11,7 @@ void    display_tet(Data *data)
     int j;
     int k;
 
+    printf("Tetrominoes:\n");
     i = 0;
     while (i < data->tetnum)
     {

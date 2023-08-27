@@ -54,18 +54,18 @@ void    get_input(Data *data, char *argv)
 {
     int fd;
     size_t size;
-    char *c;
+    char *input;
 
-    c = (char*)malloc(sizeof(char) * MAX);
+    input = (char*)malloc(sizeof(char) * MAX);
     fd = open(argv, O_RDONLY);
     if (fd == -1)
     {
         display_error();
     }
-    size = read(fd, c, MAX);
-    c[size] = '\0';
-
-    data->tetnum = check_input(c) + 1;
-    if (!check_input(c))
+    size = read(fd, input, MAX);
+    input[size] = '\0';
+    data->input = input;
+    data->tetnum = check_input(input) + 1;
+    if (!check_input(input))
         display_error();
 }

@@ -11,6 +11,7 @@
 typedef struct {
    char ***tet;
    int  tetnum;
+   char  *input;
 } Data;
 
 //*****************************************************************************
@@ -24,6 +25,9 @@ void    ft_putchar(char c);
 int    check_input(char *c);
 void    get_input(Data *data, char  *c);
 //*****************************************************************************
+void    include_tetriminoes_in_matrix(Data *data);
+//*****************************************************************************
 void    check_args(int argc, char **argv);
+
 
 #endif
