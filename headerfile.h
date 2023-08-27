@@ -13,14 +13,17 @@ typedef struct {
    int  tetnum;
 } Data;
 
-void    check_args(int argc, char **argv);
-void    get_input(Data *data, char  *c);
-void    ft_putchar(char c);
+//*****************************************************************************
+void    create_matrix(Data *data);
+//*****************************************************************************
 void    display_error(void);
 void    display_tet(Data *data);
-void    create_matrix(Data *data);
-
-
-
+//*****************************************************************************
+void    ft_putchar(char c);
+//*****************************************************************************
+int    check_input(char *c);
+void    get_input(Data *data, char  *c);
+//*****************************************************************************
+void    check_args(int argc, char **argv);
 
 #endif

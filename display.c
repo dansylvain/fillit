@@ -1,5 +1,9 @@
 #include "headerfile.h"
 
+void    display_error(void)
+{
+    write (1, "Error.", 6);
+}
 
 void    display_tet(Data *data)
 {
