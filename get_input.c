@@ -50,12 +50,11 @@ int    check_input(char *c)
     return (l);
 }
 
-void    get_input(char *argv)
+void    get_input(Data *data, char *argv)
 {
     int fd;
     size_t size;
     char *c;
-    int tetnum;
 
     c = (char*)malloc(sizeof(char) * MAX);
     fd = open(argv, O_RDONLY);
@@ -66,10 +65,7 @@ void    get_input(char *argv)
     size = read(fd, c, MAX);
     c[size] = '\0';
 
-    tetnum = check_input(c) + 1;
-    if (check_input(c))
-    {
-        create_matrix(tetnum);
-        //fill_matrix(c, tetnum);
-    }
+    data->tetnum = check_input(c) + 1;
+    if (!check_input(c))
+        display_error();
 }

@@ -1,63 +1,40 @@
-#include "headerfile.h"
+    #include "headerfile.h"
 
-
-// void    fill_matrix(char *c, int tetnum)
-// {
-//     int i;
-//     int x;
-//     int y;
-
-//     i = 0;
-//     x = 0;
-//     y = 0;
-//     while (c[i])
-//     {
-//         if (c[i] == '\n')
-//         {
-
-//         }
-//     }
-// }
-
-char    ***create_matrix(int tetnum)
-{
-    int i;
-    int x;
-    int y;
-    char ***tet;
-
-    tet = malloc(sizeof(char **) * tetnum);
-    i = 0;
-    while (i < tetnum)
+    void    create_matrix(Data *data)
     {
-        y = 0;
-        tet[i] = malloc(sizeof(char *) * 4);   
-        while (y < 4)
-        {
-            tet[i][y] = malloc(sizeof(char) * 5);   
-            y++;
-        }
-        i++;
-    }
+        int i;
+        int x;
+        int y;
 
-    i = 0;
-    while (i < tetnum)
-    {
-        y = 0;
-        while (y < 4)
+        data->tet = malloc(sizeof(char **) * data->tetnum);
+        i = 0;
+        while (i < data->tetnum)
         {
-            x = 0;
-            while (x < 4)
+            y = 0;
+            data->tet[i] = malloc(sizeof(char *) * 4);   
+            while (y < 4)
             {
-                tet[i][y][x] = '.';
-                x++;
+                data->tet[i][y] = malloc(sizeof(char) * 5);   
+                y++;
             }
-            tet[i][y][x] = '\0';
-            y++;
+            i++;
         }
-        i++; 
-    }
-    display_tet(tet, tetnum);
 
-    return (tet);
-}
+        i = 0;
+        while (i < data->tetnum)
+        {
+            y = 0;
+            while (y < 4)
+            {
+                x = 0;
+                while (x < 4)
+                {
+                    data->tet[i][y][x] = '.';
+                    x++;
+                }
+                data->tet[i][y][x] = '\0';
+                y++;
+            }
+            i++; 
+        }
+    }

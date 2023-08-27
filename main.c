@@ -10,8 +10,13 @@ void    check_args(int argc, char **argv)
 
 int main(int argc, char **argv)
 {
+    Data *data;
+
+    data = malloc(sizeof(Data));
     check_args(argc, argv);
-    get_input(argv[1]);
+    get_input(data, argv[1]);
+    create_matrix(data);
+    display_tet(data);
 
     return (0);
 }
