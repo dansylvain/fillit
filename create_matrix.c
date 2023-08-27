@@ -19,3 +19,13 @@
             i++;
         }
     }
+
+    void    create_sol_matrix(Data *data)
+    {
+        int i;
+
+        data->sol = malloc(sizeof(char *) * data->tetnum * 4);
+        i = 0;
+        while (i < data->tetnum * 4)
+            data->sol[i++] = malloc(sizeof(char) * (data->tetnum * 4 + 1));   
+    }

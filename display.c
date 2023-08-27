@@ -5,30 +5,57 @@ void    display_error(void)
     write (1, "Error.", 6);
 }
 
-void    display_tet(Data *data)
+void    display_solution(Data *data)
+{
+    int x;
+    int y;
+
+    write (1, "Solution:\n", 10);
+    y = 0;
+    while (y < data->tetnum * 4)
+    {
+        x = 0;
+        while (x < data->tetnum * 4)
+        {
+            write (1, &data->sol[y][x], 1);
+            x++;
+        }
+        write (1, "\n", 1);
+        y++;
+    }
+}
+
+void    display_tetromino(Data *data, int tet_winner)
+{
+    int x;
+    int y;
+
+    printf("tetromino n°%i:\n", tet_winner);
+    y = 0;
+    while (y < 4)
+    {
+        x = 0;
+        while (x < 4)
+        {
+            write (1, &data->tet[tet_winner][y][x], 1);
+            x++;
+        }
+        write (1, "\n", 1);
+        y++;
+    }
+
+}
+
+
+void    display_tetrominos(Data *data)
 {
     int i;
-    int j;
-    int k;
 
-    printf("Tetrominoes:\n");
     i = 0;
     while (i < data->tetnum)
     {
-        j = 0;
-        while (j < 4)
-        {
-            k = 0;
-            while (k < 4)
-            {
-                write(1, &data->tet[i][j][k], 1);
-                k++;
-            }
-            write (1, "\n", 1);
-            j++;
-        }
+        display_tetromino(data, i);
         i++;
-        write(1, "\n", 1);
     }
 
 }
