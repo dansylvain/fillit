@@ -54,7 +54,6 @@ void    get_input(Data *data, char *argv)
     input[size] = '\0';
     input_size = (int)size;
     data->input_size = input_size;
-    printf("input_size : %i\n", data->input_size);
     data->input = input;
     if (!check_input(data, input))
         display_error();

@@ -39,7 +39,7 @@ void    add_tetromino_to_sol(Data *data, int tet_tested, int v, int h);
 int ignore_blanks_vertical(Data *data, int tet_tested);
 int ignore_blanks_horizontal(Data *data, int tet_tested);
 
-//*************** INCLUDE TETROMINOES_IN_MATRIX.C *****************************
+//*************** INCLUDE_TETROMINOES_IN_MATRIX.C *****************************
 void    include_tetriminoes_in_matrix(Data *data);
 int   check_tetriminos(Data *data, int tet_tested);
 void    erase_blank_ligns_and_columns(Data *data, int tet_toclean);
@@ -47,11 +47,6 @@ int   first_column_isempty(Data *data, int tet_tested    );
 void    erase_blank_first_column(Data *data, int tet_toclean);
 int   row_isempty(Data *data, int tet_tested, int row_tested);
 void  clean_tetriminos(Data *data);
-
-//************************ UPDATE.C *******************************************
-void    update_matrix(Data *data);
-
-
 
 
 //************************ MAIN.C *********************************************

@@ -50,7 +50,6 @@ void    display_tetromino(Data *data, int tet_winner)
             }
         y++;
     }
-
 }
 
 
@@ -62,50 +61,6 @@ void    display_tetrominos(Data *data)
     while (i < data->tetnum)
     {
         display_tetromino(data, i);
-        i++;
-    }
-
-}
-
-
-void    display_tetromino_update(Data *data, int tet_winner)
-{
-    int x;
-    int y;
-
-    printf("tetrominox n°%i:\n", tet_winner);
-    printf("et alors?\n");
-    y = 0; 
-    while (y < 4)
-    {
-        x = 0; 
-        //if (!row_isempty(data, tet_winner, y))
-            {
-                while (x < 4)
-                {
-                    if (data->mat_update[tet_winner][y][x] != '.')
-                        write (1, &data->mat_update[tet_winner][y][x], 1);
-                    else
-                        write (1, ".", 1);
-
-                    x++;
-                }
-            write (1, "\n", 1);
-            }
-        y++;
-    }
-
-}
-
-
-void    display_matrix_update(Data *data)
-{
-    int i;
-
-    i = 0;
-    while (i < data->tetnum)
-    {
-        display_tetromino_update(data, i);
         i++;
     }
 
