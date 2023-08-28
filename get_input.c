@@ -1,6 +1,6 @@
 #include "headerfile.h"
 
-int    check_input(char *c)
+int    check_input(Data *data, char *c)
 {
     int i;
     int j;
@@ -11,11 +11,11 @@ int    check_input(char *c)
     j = 0;  // letter counter (tetriminos level)
     k = 0;  // line counter
     l = 0;  // tetriminos counter
-    while (c[i])
+    while (i < data->input_size)
     {
         if (c[i] != '\n')
             j++;
-        if (c[i] == '\n' && j != 4 && c[i - 1] != '\n')
+        if ((c[i] == '\n' || i == data->input_size - 1) && j != 4 && c[i - 1] != '\n')
         {
             display_error();
             return (0);
@@ -47,13 +47,15 @@ int    check_input(char *c)
         display_error();
         return (0);
     }
-    return (l);
+    data->tetnum = l + 1;
+    return (1);
 }
 
 void    get_input(Data *data, char *argv)
 {
     int fd;
     size_t size;
+    int input_size;
     char *input;
 
     input = (char*)malloc(sizeof(char) * MAX);
@@ -64,8 +66,10 @@ void    get_input(Data *data, char *argv)
     }
     size = read(fd, input, MAX);
     input[size] = '\0';
+    input_size = (int)size;
+    data->input_size = input_size;
+    printf("input_size : %i\n", data->input_size);
     data->input = input;
-    data->tetnum = check_input(input) + 1;
-    if (!check_input(input))
+    if (!check_input(data, input))
         display_error();
 }

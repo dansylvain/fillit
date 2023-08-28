@@ -2,7 +2,7 @@
 
 void    display_error(void)
 {
-    write (1, "Error.", 6);
+    write (1, "Error.\n", 7);
 }
 
 void    display_solution(Data *data)
@@ -31,13 +31,17 @@ void    display_tetromino(Data *data, int tet_winner)
     int y;
 
     printf("tetromino n°%i:\n", tet_winner);
-    y = 0;
+    y = 0; //ignore_blanks_vertical(data, tet_winner);
     while (y < 4)
     {
-        x = 0;
+        x = 0; //ignore_blanks_horizontal(data, tet_winner);
         while (x < 4)
         {
-            write (1, &data->tet[tet_winner][y][x], 1);
+            if (data->tet[tet_winner][y][x] != '.')
+                write (1, &data->tet[tet_winner][y][x], 1);
+            else
+                write (1, ".", 1);
+
             x++;
         }
         write (1, "\n", 1);

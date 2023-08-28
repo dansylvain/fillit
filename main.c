@@ -1,10 +1,24 @@
 #include "headerfile.h"
 
-void    check_args(int argc, char **argv)
+int    check_args(Data *data, int argc, char **argv)
 {
+    //************* REMOVE WHEN PROJECT IS COMPLETE !!! ***********
+    if (argc == 1)
+    {
+        data->inputfile = "extern_file.txt";
+        return (1);
+    }
+
+
+
+    //*************************************************************
     if (argc != 2)
+    {
         display_error();
-    (void)argv;
+        return (0);
+    }
+    data->inputfile = argv[1];
+    return (1);
 }
 
 
@@ -13,13 +27,23 @@ int main(int argc, char **argv)
     Data *data;
 
     data = malloc(sizeof(Data));
-    check_args(argc, argv);
-    get_input(data, argv[1]);
-    create_matrix(data);
-    include_tetriminoes_in_matrix(data);
-    create_sol_matrix(data);
-    display_tetrominos(data);
-    add_tetromino_to_sol(data, 1);
-    display_solution(data);
+    if (!check_args(data, argc, argv))
+        return (1);
+    get_input(data, data->inputfile);
+    // if (!check_input(data->input))
+    //     return (1);
+    // create_matrix(data);
+    // include_tetriminoes_in_matrix(data);
+    // create_sol_matrix(data);
+    // display_tetrominos(data);
+
+    //TEST THINGS HERE!!!!
+
+
+
+    //display_solution(data);
+    //add_tetromino_to_sol(data, 2, 0, 0);
+    //display_solution(data);
+
     return (0);
 }

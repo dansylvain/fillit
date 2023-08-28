@@ -9,6 +9,8 @@
 #define MAX 1024
 
 typedef struct {
+   char  *inputfile;
+   int   input_size;
    char ***tet;
    char **sol;
    int  tetnum;
@@ -29,14 +31,17 @@ void    display_solution(Data *data);
 //***************************** FUNC.C ****************************************
 void    ft_putchar(char c);
 //************************* GET_INPUT.C ***************************************
-int    check_input(char *c);
+int    check_input(Data *data, char *c);
 void    get_input(Data *data, char  *c);
 //************************* GET_SOLUTION.C ************************************
-void    add_tetromino_to_sol(Data *data, int tet_tested);
+void    add_tetromino_to_sol(Data *data, int tet_tested, int v, int h);
+int ignore_blanks_vertical(Data *data, int tet_tested);
+int ignore_blanks_horizontal(Data *data, int tet_tested);
+
 //*************** INCLUDE TETROMINOES_IN_MATRIX.C *****************************
 void    include_tetriminoes_in_matrix(Data *data);
 //************************ MAIN.C *********************************************
-void    check_args(int argc, char **argv);
+int   check_args(Data *data, int argc, char **argv);
 
 
 #endif
