@@ -32,12 +32,14 @@ int main(int argc, char **argv)
     get_input(data, data->inputfile);
      if (!check_input(data, data->input))
          return (1);
-    create_matrix(data);
+    data->tet = create_matrix(data);
     include_tetriminoes_in_matrix(data);
-    display_tetrominos(data);
+    //display_tetrominos(data);
     clean_tetriminos(data);
-    display_tetrominos(data);
-        //TEST THINGS HERE!!!!
+    //display_tetrominos(data);
+        //TEST THINGS HERE!!!
+    update_matrix(data);
+    display_matrix_update(data);
 
 
 

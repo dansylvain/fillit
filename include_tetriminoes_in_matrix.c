@@ -47,7 +47,6 @@ int first_column_isempty(Data *data, int tet_tested)
     i = 0;
     while (i < 4)
     {
-        printf("tet: %i, char: %c\n", tet_tested, data->tet[tet_tested][i][0]);
         if (data->tet[tet_tested][i][0] != '.' && data->tet[tet_tested][i][0] != '\0')
             return (0);
         i++;

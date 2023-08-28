@@ -12,13 +12,14 @@ typedef struct {
    char  *inputfile;
    int   input_size;
    char ***tet;
+   char ***mat_update;
    char **sol;
    int  tetnum;
    char  *input;
 } Data;
 
 //****************************** CREATE_MATRIX.C ******************************
-void    create_matrix(Data *data);
+char    ***create_matrix(Data *data);
 void    create_sol_matrix(Data *data);
 //*************************** DISPLAY.C ***************************************
 void    display_error(void);
@@ -26,7 +27,7 @@ void    display_tet(Data *data);
 void    display_tetromino(Data *data, int tet_winner);
 void    display_tetrominos(Data *data);
 void    display_solution(Data *data);
-
+void    display_matrix_update(Data *data);
 
 //***************************** FUNC.C ****************************************
 void    ft_putchar(char c);
@@ -42,11 +43,13 @@ int ignore_blanks_horizontal(Data *data, int tet_tested);
 void    include_tetriminoes_in_matrix(Data *data);
 int   check_tetriminos(Data *data, int tet_tested);
 void    erase_blank_ligns_and_columns(Data *data, int tet_toclean);
-int   first_column_isempty(Data *data, int tet_tested);
+int   first_column_isempty(Data *data, int tet_tested    );
 void    erase_blank_first_column(Data *data, int tet_toclean);
 int   row_isempty(Data *data, int tet_tested, int row_tested);
 void  clean_tetriminos(Data *data);
 
+//************************ UPDATE.C *******************************************
+void    update_matrix(Data *data);
 
 
 

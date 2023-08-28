@@ -1,23 +1,25 @@
 #include "headerfile.h"
 
-void    create_matrix(Data *data)
+char    ***create_matrix(Data *data)
 {
     int i;
     int y;
+    char ***matrix;
 
-    data->tet = malloc(sizeof(char **) * data->tetnum);
+    matrix = malloc(sizeof(char **) * data->tetnum);
     i = 0;
     while (i < data->tetnum)
     {
         y = 0;
-        data->tet[i] = malloc(sizeof(char *) * 4);   
+        matrix[i] = malloc(sizeof(char *) * 4);   
         while (y < 4)
         {
-            data->tet[i][y] = malloc(sizeof(char) * 5);   
+            matrix[i][y] = malloc(sizeof(char) * 5);   
             y++;
         }
         i++;
     }
+    return (matrix);
 }
 
 void    fill_sol_matrix(Data *data)
