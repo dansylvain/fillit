@@ -37,7 +37,7 @@ int blocs_are_valid(char **tet)
     (void)tet;
 }
 
-int bloc_quantity_isOK(char **tet)
+int bloc_quantity_is_OK(char **tet)
 {
     int x;
     int y;
@@ -64,7 +64,7 @@ int bloc_quantity_isOK(char **tet)
 
 int tetrimino_is_valid(char **tet)
 {
-    if (!bloc_quantity_isOK(tet))
+    if (!bloc_quantity_is_OK(tet))
         return (0);
     if (!blocs_are_valid(tet))
         return (0);

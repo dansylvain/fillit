@@ -29,5 +29,4 @@ void    include_tetriminoes_in_matrix(Data *data)
         }
         i++;
     }
-
 }
