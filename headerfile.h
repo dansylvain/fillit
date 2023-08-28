@@ -27,6 +27,7 @@ void    display_tet(Data *data);
 void    display_tetromino(Data *data, int tet_winner);
 void    display_tetrominos(Data *data);
 void    display_solution(Data *data);
+void    display_tetromino_update(Data *data, int tet_winner);
 void    display_matrix_update(Data *data);
 
 //***************************** FUNC.C ****************************************
@@ -48,6 +49,9 @@ void    erase_blank_first_column(Data *data, int tet_toclean);
 int   row_isempty(Data *data, int tet_tested, int row_tested);
 void  clean_tetriminos(Data *data);
 
+
+//************************ UPDATE.C *******************************************
+void    update_matrix(Data *data);
 
 //************************ MAIN.C *********************************************
 int   check_args(Data *data, int argc, char **argv);

@@ -47,6 +47,7 @@ int first_column_isempty(Data *data, int tet_tested)
     i = 0;
     while (i < 4)
     {
+        printf("tet: %i, char: %c\n", tet_tested, data->tet[tet_tested][i][0]);
         if (data->tet[tet_tested][i][0] != '.' && data->tet[tet_tested][i][0] != '\0')
             return (0);
         i++;
@@ -54,23 +55,6 @@ int first_column_isempty(Data *data, int tet_tested)
     return (1);
 }
 
-int row_isempty(Data *data, int tet_tested, int row_tested)
-{
-    int i;
-
-    i = 0;
-    while (i < 4)
-    {
-        if (data->tet[tet_tested][row_tested][i] != '\0')
-        {
-            return (0);
-
-        }
-
-        i++;
-    }
-    return (1);
-}
 
 void clean_tetriminos(Data *data)
 {

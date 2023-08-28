@@ -35,9 +35,11 @@ int main(int argc, char **argv)
     data->tet = create_matrix(data);
     include_tetriminoes_in_matrix(data);
     //display_tetrominos(data);
-    clean_tetriminos(data);
+    //clean_tetriminos(data);
     display_tetrominos(data);
         //TEST THINGS HERE!!!
+    update_matrix(data);
+    display_matrix_update(data);
     
 
 
