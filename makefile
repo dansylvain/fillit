@@ -14,8 +14,13 @@ $(EXEC) : $(OBJ)
 clean :
 	rm -rf *.o
 
+fclean : clean
+	rm -f $(EXEC)
+
 mrproper : clean
 	rm -rf rush-01
+
+re : fclean all
 
 # $@ nom cible
 # $< nom premiere dependance

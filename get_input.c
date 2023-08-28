@@ -1,59 +1,47 @@
 #include "headerfile.h"
 
-int    check_input(char *c)
+int    check_input(Data *data, char *c)
 {
-    int i;
     int j;
     int k;
     int l;
 
-    i = 0;  // carac counter (string level)
     j = 0;  // letter counter (tetriminos level)
     k = 0;  // line counter
     l = 0;  // tetriminos counter
-    while (c[i])
+    while (*c)
     {
-        if (c[i] != '\n')
-            j++;
-        if (c[i] == '\n' && j != 4 && c[i - 1] != '\n')
-        {
-            display_error();
+        if (*c != '.' && *c != '#' && *c != '\n')
             return (0);
-        }
-        if (c[i] == '\n')
+        if (*c != '\n')
+            j++;
+        if ((*c == '\n' || *(c + 1) == '\0') && j != 4 && *(c - 1) != '\n')
+            return (0);
+        if (*c == '\n')
         {
             k++;
             j = 0;
         }
-        if (c[i] == '\n' && c[i - 1] == '\n' && k != 5)
-            {
-                display_error();
+        if (*c == '\n' && *(c -1) == '\n' && k != 5)
                 return (0);
-            }
-        if (c[i]  == '\n' && c[i - 1] == '\n')
+        if (*c  == '\n' && *(c - 1) == '\n')
         {
             k = 0;
             l++;
         }
-        if (c[i] != '.' && c[i] != '#' && c[i] != '\n')
-        {
-                display_error();    
-                return (0);
-        }
-        i++;
+        c++;
     }
     if (l == 0 || l > 25)
-    {
-        display_error();
         return (0);
-    }
-    return (l);
+    data->tetnum = l + 1;
+    return (1);
 }
 
 void    get_input(Data *data, char *argv)
 {
     int fd;
     size_t size;
+    int input_size;
     char *input;
 
     input = (char*)malloc(sizeof(char) * MAX);
@@ -64,8 +52,10 @@ void    get_input(Data *data, char *argv)
     }
     size = read(fd, input, MAX);
     input[size] = '\0';
+    input_size = (int)size;
+    data->input_size = input_size;
+    printf("input_size : %i\n", data->input_size);
     data->input = input;
-    data->tetnum = check_input(input) + 1;
-    if (!check_input(input))
+    if (!check_input(data, input))
         display_error();
 }
