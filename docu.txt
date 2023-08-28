@@ -1,0 +1,25 @@
+. le fichier makefile correspond à ce qui est demandé. Je te laisse en juger.
+
+. main.c: Seulement une fonciton check-args pour l'instant. Je n'ai pas pris le temps de regarder s'il y aura d'autres check à effectuer. J'ai laissé le programme s'executer même sans spécifier de fichier en paramètre pour le développement. On pensera bien à enlever le bloc de code intempestif en fin de projet.
+
+.headerfile.c: c'est là que j'ai planqué la structure. J'ai l'habitude de coder comme ça: toutes les variables dans la structure et je passe Data *data à toutes mes fonctions depuis le main.
+
+get_input: les fonction principales de ce groupe de fonctions (qui appellent d'autres fichiers) est de:
+- vérifier la validité de l'input.
+- remplir la structure de tetriminos prêts à l'emploi (= formaté optimalement pour la suite).
+WIP (work in progress)
+
+.display: des fonctions pour afficher différentes choses: message d'erreur, tetriminos isolé, tous les tetriminos, la solution...
+Ces fonctions sont utiles pour le développement et certaines pour le projet final.
+
+. create matrix: le nom est clair, nom? J'ai aussi une fonctions d'initialisation de matrices à l'intérieur.
+
+.include_tetriminoes_in_matrix: un nom un peu bâtard pour un fichier bâtard. cette fonction devrait appartenir à get_solution.
+
+.get_solution: c'est là que commence l'algo de résolution. De ce que j'ai regardé juste maintenant, il n'y a là que des fonctions d'inclusion de tetriminos existant dans la structure à la matrice solution. Te gène pas à faire table rase si tu sens que tout cela ne sert à rien.
+
+NOTE: j'imagine formater les tetriminos différemment qu'il nous sont donnés par l'input, à savoir en ne gardant que le plus petit quadrilatère les contenant. On garde le format de chaînes de caractères, chacune se termine par un '\0' et il est possible de les parcourir en sachant où s'arrêter. Je peux même inclure une dernière chaîne de caractère composée d'un unique '\0' en fin de tableau pour savoir quand arrêter?
+
+func.c: un fichier où mettre des fonctions utiles si on sait pas où les foutre.
+
+extern_file.txt : c'est le nom qu'il faut donner aux fichiers externes qui ne compilent pas dans notre programme. Dans ce cas, c'est l'input du programme qu'on utilise pour tester.
