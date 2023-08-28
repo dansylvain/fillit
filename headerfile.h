@@ -18,6 +18,10 @@ typedef struct {
    char  *input;
 } Data;
 
+//*********************** check_tetriminis_validity.C *************************
+int   tetriminis_are_valid(Data *data);
+
+
 //****************************** CREATE_MATRIX.C ******************************
 char    ***create_matrix(Data *data);
 void    create_sol_matrix(Data *data);

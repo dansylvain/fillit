@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "headerfile.h": "c"
+        "headerfile.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c"
     }
 }

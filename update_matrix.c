@@ -142,5 +142,4 @@ void    update_matrix(Data *data)
     data->mat_update = create_matrix(data);
     fill_updated_matrix(data);
     copy_tetriminos_to_update(data);
-
 }

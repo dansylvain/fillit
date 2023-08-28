@@ -30,16 +30,16 @@ int main(int argc, char **argv)
     if (!check_args(data, argc, argv))
         return (1);
     get_input(data, data->inputfile);
-     if (!check_input(data, data->input))
+    if (!check_input(data, data->input))
          return (1);
     data->tet = create_matrix(data);
     include_tetriminoes_in_matrix(data);
-    //display_tetrominos(data);
-    //clean_tetriminos(data);
     display_tetrominos(data);
-        //TEST THINGS HERE!!!
+    if (!tetriminis_are_valid(data))
+        return (1);
     update_matrix(data);
     display_matrix_update(data);
+        //TEST THINGS HERE!!!
     
 
 
