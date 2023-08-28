@@ -31,20 +31,23 @@ void    display_tetromino(Data *data, int tet_winner)
     int y;
 
     printf("tetromino n°%i:\n", tet_winner);
-    y = 0; //ignore_blanks_vertical(data, tet_winner);
+    y = 0; 
     while (y < 4)
     {
-        x = 0; //ignore_blanks_horizontal(data, tet_winner);
-        while (x < 4)
-        {
-            if (data->tet[tet_winner][y][x] != '.')
-                write (1, &data->tet[tet_winner][y][x], 1);
-            else
-                write (1, ".", 1);
+        x = 0; 
+        if (!row_isempty(data, tet_winner, y))
+            {
+                while (x < 4)
+                {
+                    if (data->tet[tet_winner][y][x] != '.')
+                        write (1, &data->tet[tet_winner][y][x], 1);
+                    else
+                        write (1, ".", 1);
 
-            x++;
-        }
-        write (1, "\n", 1);
+                    x++;
+                }
+            write (1, "\n", 1);
+            }
         y++;
     }
 

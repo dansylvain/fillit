@@ -40,6 +40,17 @@ int ignore_blanks_horizontal(Data *data, int tet_tested);
 
 //*************** INCLUDE TETROMINOES_IN_MATRIX.C *****************************
 void    include_tetriminoes_in_matrix(Data *data);
+int   check_tetriminos(Data *data, int tet_tested);
+void    erase_blank_ligns_and_columns(Data *data, int tet_toclean);
+int   first_column_isempty(Data *data, int tet_tested);
+void    erase_blank_first_column(Data *data, int tet_toclean);
+int   row_isempty(Data *data, int tet_tested, int row_tested);
+void  clean_tetriminos(Data *data);
+
+
+
+
+
 //************************ MAIN.C *********************************************
 int   check_args(Data *data, int argc, char **argv);
 
