@@ -33,6 +33,7 @@ int main(int argc, char **argv)
     if (!check_input(data, data->input))
          return (1);
     data->tet = create_matrix(data);
+    data->tet = initialize_matrix(data, data->tet);
     include_tetriminoes_in_matrix(data);
     //display_tetrominos(data);
     if (!tetriminis_are_valid(data))
@@ -63,6 +64,6 @@ int main(int argc, char **argv)
     //add_tetromino_to_sol(data, 2, 0, 0);
     //display_solution(data);
 
-    free_matrixes(data);
+    free_everything(data);
     return (0);
 }

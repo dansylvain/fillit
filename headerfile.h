@@ -27,6 +27,7 @@ int   tetriminis_are_valid(Data *data);
 
 
 //****************************** CREATE_MATRIX.C ******************************
+char ***initialize_matrix(Data *data, char ***matrix);
 char    ***create_matrix(Data *data);
 void    fill_sol_matrix(Data *data);
 void    create_sol_matrix(Data *data);
@@ -40,7 +41,7 @@ void    display_matrix_update(Data *data);
 
 //***************************** FREE.C ****************************************
 void free_matrix(char ***matrix, int ternum);
-void    free_matrixes(Data *data);
+void    free_everything(Data *data);
 
 
 //***************************** FUNC.C ****************************************

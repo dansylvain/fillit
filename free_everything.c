@@ -17,8 +17,10 @@ void free_matrix(char ***matrix, int ternum)
     free(matrix);
 }
 
-void    free_matrixes(Data *data)
+void    free_everything(Data *data)
 {
     free_matrix(data->tet, data->tetnum);
     free_matrix(data->mat_update, data->tetnum);
+    free(data->input);
+    free(data);
 }
