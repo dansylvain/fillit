@@ -42,19 +42,15 @@ void    get_input(Data *data, char *argv)
     int fd;
     size_t size;
     int input_size;
-    char *input;
 
-    input = (char*)malloc(sizeof(char) * MAX);
+    data->input = (char*)malloc(sizeof(char) * MAX);
     fd = open(argv, O_RDONLY);
     if (fd == -1)
-    {
         display_error();
-    }
-    size = read(fd, input, MAX);
-    input[size] = '\0';
+    size = read(fd, data->input, MAX);
+    data->input[size] = '\0';
     input_size = (int)size;
     data->input_size = input_size;
-    data->input = input;
-    if (!check_input(data, input))
+    if (!check_input(data, data->input))
         display_error();
 }

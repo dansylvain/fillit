@@ -38,6 +38,11 @@ void    display_tetrominos(Data *data);
 void    display_tetromino_update(Data *data, int tet_winner);
 void    display_matrix_update(Data *data);
 
+//***************************** FREE.C ****************************************
+void free_matrix(char ***matrix, int ternum);
+void    free_matrixes(Data *data);
+
+
 //***************************** FUNC.C ****************************************
 void    ft_putchar(char c);
 //************************* GET_INPUT.C ***************************************

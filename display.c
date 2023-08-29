@@ -72,7 +72,7 @@ void    display_tetromino_update(Data *data, int tet_winner)
     int x;
     int y;
 
-    printf("tetrominox n°%i:\n", tet_winner);
+    printf("tetriminos n°%i:\n", tet_winner);
     y = 0; 
     while (y < 4)
     {

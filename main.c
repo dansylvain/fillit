@@ -63,5 +63,6 @@ int main(int argc, char **argv)
     //add_tetromino_to_sol(data, 2, 0, 0);
     //display_solution(data);
 
+    free_matrixes(data);
     return (0);
 }
