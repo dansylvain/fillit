@@ -39,7 +39,7 @@ void    display_tetrominos(Data *data);
 void    display_tetromino_update(Data *data, int tet_winner);
 void    display_matrix_update(Data *data);
 
-//***************************** FREE.C ****************************************
+//****************** FREE_EVERYTHING.C ****************************************
 void free_matrix(char ***matrix, int ternum);
 void    free_everything(Data *data);
 
@@ -56,14 +56,9 @@ int ignore_blanks_horizontal(Data *data, int tet_tested);
 void    add_tetromino_to_sol(Data *data, int tet_tested, int v, int h);
 
 //*************** INCLUDE_TETROMINOES_IN_MATRIX.C *****************************
+void    handle_return(Data *data, int *i, int *y, int *x);
+void    handle_new_tetriminion(Data *data, int *i, int *y, int *j);
 void    include_tetriminoes_in_matrix(Data *data);
-int   check_tetriminos(Data *data, int tet_tested);
-void    erase_blank_ligns_and_columns(Data *data, int tet_toclean);
-int   first_column_isempty(Data *data, int tet_tested    );
-void    erase_blank_first_column(Data *data, int tet_toclean);
-int   row_isempty(Data *data, int tet_tested, int row_tested);
-void  clean_tetriminos(Data *data);
-
 
 //************************ UPDATE.C *******************************************
 int col_isempty(Data *data, int tet_tested, int col_tested);
