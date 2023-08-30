@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     //display_solution(data, data->sol_size);
     add_tetriminos_to_matrix(data, 1, 0, 3);
     display_solution(data, data->sol_size);
-    remove_tetrominos(data, 1, 0, 3);
+    remove_tetriminos(data, 1, 0, 3);
     display_solution(data, data->sol_size);
     
 

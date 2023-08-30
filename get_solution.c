@@ -29,7 +29,7 @@ int can_place_tet(Data *data, int tet_index, int x, int y)
     return (1);
 }
 
-void    remove_tetrominos(Data *data, int tet_index, int x, int y)
+void    remove_tetriminos(Data *data, int tet_index, int x, int y)
 {
     int i;
     int j;
@@ -84,7 +84,7 @@ void    get_solution(Data *data, int tet_index)
                 add_tetriminos_to_matrix(data, tet_index, x, y);
                 display_solution(data, data->sol_size   );        
                 get_solution(data, tet_index + 1);
-                remove_tetrominos(data, tet_index, x, y);
+                remove_tetriminos(data, tet_index, x, y);
             }
             x++;
         }  

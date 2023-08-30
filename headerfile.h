@@ -24,7 +24,7 @@ int get_tet_size_y(char **tet);
 int get_tet_size_x(char **tet);
 void    add_tetriminos_to_matrix(Data *data, int tet, int x, int y);
 int can_place_tet(Data *data, int tet_index, int x, int y);
-void    remove_tetrominos(Data *data, int tet_index, int x, int y);
+void    remove_tetriminos(Data *data, int tet_index, int x, int y);
 
 
 
