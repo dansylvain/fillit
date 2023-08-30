@@ -42,18 +42,19 @@ int main(int argc, char **argv)
     //display_matrix_update(data);
 
     //************ TEST THINGS HERE!!! *****************
-    create_sol_matrix(data, 4);
-    add_tetriminos_to_matrix(data, 0, 0, 1);
-    display_solution(data, 4);
-    remove_tetrominos(data, 0, 0, 1);
-    display_solution(data, 4);
+    data->sol_size = ft_sqrt(data->tetnum * 4);
+    create_sol_matrix(data, data->sol_size);
+    //display_solution(data, data->sol_size);
+    add_tetriminos_to_matrix(data, 1, 0, 3);
+    display_solution(data, data->sol_size);
+    remove_tetrominos(data, 1, 0, 3);
+    display_solution(data, data->sol_size);
+    
 
     //get_solution(data, 0);
 
 
     // create_sol_matrix(data, 10);
-    // add_tetriminos_to_matrix(data, 0, 0, 0);
-    // display_solution(data, 10);
     // free_sol_matrix(data, 10);
     //check_func_add_tetriminos_to_matrix(data);
 
