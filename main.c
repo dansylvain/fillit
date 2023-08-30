@@ -43,8 +43,12 @@ int main(int argc, char **argv)
 
     //************ TEST THINGS HERE!!! *****************
     create_sol_matrix(data, 4);
-    can_place_tet(data, 0, 0, 0);
-    get_solution(data, 0);
+    add_tetriminos_to_matrix(data, 0, 0, 1);
+    display_solution(data, 4);
+    remove_tetrominos(data, 0, 0, 1);
+    display_solution(data, 4);
+
+    //get_solution(data, 0);
 
 
     // create_sol_matrix(data, 10);

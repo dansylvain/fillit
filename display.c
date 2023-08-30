@@ -25,7 +25,7 @@ void    display_solution(Data *data, int size)
     int x;
     int y;
 
-    write (1, "Solution:\n", 10);
+    write (1, "\n", 1);
     y = 0;
     while (y < size)
     {
