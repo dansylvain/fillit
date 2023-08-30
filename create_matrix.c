@@ -10,7 +10,7 @@ char ***initialize_matrix(Data *data, char ***matrix)
     while (i < data->tetnum)
     {
         y = 0;
-        while (y < 4)
+        while (y < 5)
         {
             x = 0;
             while (x < 4)
@@ -27,7 +27,7 @@ char ***initialize_matrix(Data *data, char ***matrix)
 }
 
 
-char    ***create_matrix(Data *data)
+char    ***create_3Dmatrix(Data *data)
 {
     int i;
     int y;
@@ -38,8 +38,8 @@ char    ***create_matrix(Data *data)
     while (i < data->tetnum)
     {
         y = 0;
-        matrix[i] = malloc(sizeof(char *) * 4);   
-        while (y < 4)
+        matrix[i] = malloc(sizeof(char *) * 5);   
+        while (y < 5)
         {
             matrix[i][y] = malloc(sizeof(char) * 5);   
             y++;
@@ -49,31 +49,32 @@ char    ***create_matrix(Data *data)
     return (matrix);
 }
 
-void    fill_sol_matrix(Data *data)
+void    fill_sol_matrix(Data *data, int size)
 {
     int x;
     int y;
 
     y = 0;
-    while (y < data->tetnum * 4)
+    while (y < size)
     {
         x = 0;
-        while (x < data->tetnum * 4)
+        while (x < size)
         {
             data->sol[y][x] = '.';
             x++;
         }
+        data->sol[y][x] = '\0';
         y++;
     }
 }
 
-void    create_sol_matrix(Data *data)
+void    create_sol_matrix(Data *data, int size)
 {
     int i;
 
-    data->sol = malloc(sizeof(char *) * data->tetnum * 4);
+    data->sol = malloc(sizeof(char *) * size);
     i = 0;
-    while (i < data->tetnum * 4)
-        data->sol[i++] = malloc(sizeof(char) * (data->tetnum * 4 + 1)); 
-    fill_sol_matrix(data);  
+    while (i < size)
+        data->sol[i++] = malloc(sizeof(char) * (size + 1)); 
+    fill_sol_matrix(data, size);  
 }

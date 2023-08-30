@@ -1,5 +1,18 @@
 #include "headerfile.h"
 
+void    free_sol_matrix(Data *data, int size)
+{
+    int i;
+
+    i = 0;
+    while (i < size)
+    {
+        free(data->sol[i]);
+        i++;
+    }
+    free(data->sol);
+}
+
 void free_matrix(char ***matrix, int ternum)
 {
     int i;
@@ -9,7 +22,7 @@ void free_matrix(char ***matrix, int ternum)
     while (i < ternum)
     {
         j = 0;
-        while (j < ternum)
+        while (j < 5)
             free(matrix[i][j++]);
         free(matrix[i]);
         i++;

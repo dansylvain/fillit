@@ -5,17 +5,32 @@ void    display_error(void)
     write (1, "Error.\n", 7);
 }
 
-void    display_solution(Data *data)
+void    display_all_tetrimini_in_matrix(Data *data)
+{
+    int i;
+
+    i = 0;
+    while (i < data->tetnum)
+    {
+        create_sol_matrix(data, 6);
+        add_tetriminos_to_matrix(data, i, 0, 0);
+        display_solution(data, 6);
+        free_sol_matrix(data, 6);
+        i++;
+    }
+}
+
+void    display_solution(Data *data, int size)
 {
     int x;
     int y;
 
     write (1, "Solution:\n", 10);
     y = 0;
-    while (y < data->tetnum * 4)
+    while (y < size)
     {
         x = 0;
-        while (x < data->tetnum * 4)
+        while (x < size)
         {
             write (1, &data->sol[y][x], 1);
             x++;
@@ -74,7 +89,7 @@ void    display_tetromino_update(Data *data, int tet_winner)
 
     printf("tetriminos n°%i:\n", tet_winner);
     y = 0; 
-    while (y < 4)
+    while (y < 5)
     {
         x = 0; 
 

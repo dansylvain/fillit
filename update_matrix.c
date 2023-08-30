@@ -123,10 +123,10 @@ void    fill_updated_matrix(Data *data)
     while (i < data->tetnum)
     {
         y = 0;
-        while (y < 4)
+        while (y < 5)
         {
             x = 0;
-            while (x < 4)
+            while (x < 5)
             {
                 data->mat_update[i][y][x] = '\0';
                 x++;
@@ -139,7 +139,7 @@ void    fill_updated_matrix(Data *data)
 
 void    update_matrix(Data *data)
 {
-    data->mat_update = create_matrix(data);
+    data->mat_update = create_3Dmatrix(data);
     fill_updated_matrix(data);
     copy_tetriminos_to_update(data);
 }

@@ -14,7 +14,7 @@ Ces fonctions sont utiles pour le développement et certaines pour le projet fin
 
 . create matrix: le nom est clair, nom? J'ai aussi une fonctions d'initialisation de matrices à l'intérieur.
 
-.include_tetriminoes_in_matrix: un nom un peu bâtard pour un fichier bâtard. cette fonction devrait appartenir à get_solution.
+.include_tetriminoes_to_matrix: un nom un peu bâtard pour un fichier bâtard. cette fonction devrait appartenir à get_solution.
 
 .get_solution: c'est là que commence l'algo de résolution. De ce que j'ai regardé juste maintenant, il n'y a là que des fonctions d'inclusion de tetriminos existant dans la structure à la matrice solution. Te gène pas à faire table rase si tu sens que tout cela ne sert à rien.
 

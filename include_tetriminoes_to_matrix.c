@@ -17,7 +17,7 @@ void    handle_new_tetriminion(Data *data, int *i, int *y, int *j)
         *y = 0;
     }
 }
-void    include_tetriminoes_in_matrix(Data *data)
+void    include_tetriminoes_to_matrix(Data *data)
 {
     int i;
     int j;

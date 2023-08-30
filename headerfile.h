@@ -16,6 +16,7 @@ typedef struct {
    char **sol;
    int  tetnum;
    char  *input;
+   int   sol_size;
 } Data;
 
 //*********************** check_tetriminis_validity.C *************************
@@ -26,14 +27,15 @@ int tetrimino_is_valid(char **tet);
 int   tetriminis_are_valid(Data *data);
 
 
-//****************************** CREATE_MATRIX.C ******************************
+//****************************** create_3Dmatrix.C ******************************
 char ***initialize_matrix(Data *data, char ***matrix);
-char    ***create_matrix(Data *data);
-void    fill_sol_matrix(Data *data);
-void    create_sol_matrix(Data *data);
+char    ***create_3Dmatrix(Data *data);
+void    fill_sol_matrix(Data *data, int size);
+void    create_sol_matrix(Data *data, int size);
 //*************************** DISPLAY.C ***************************************
+void    display_all_tetrimini_in_matrix(Data *data);
 void    display_error(void);
-void    display_solution(Data *data);
+void    display_solution(Data *data, int size);
 void    display_tetromino(Data *data, int tet_winner);
 void    display_tetrominos(Data *data);
 void    display_tetromino_update(Data *data, int tet_winner);
@@ -42,23 +44,23 @@ void    display_matrix_update(Data *data);
 //****************** FREE_EVERYTHING.C ****************************************
 void free_matrix(char ***matrix, int ternum);
 void    free_everything(Data *data);
-
+void    free_sol_matrix(Data *data, int size);
 
 //***************************** FUNC.C ****************************************
 void    ft_putchar(char c);
+int ft_sqrt(int nb);
+
 //************************* GET_INPUT.C ***************************************
 int    check_input(Data *data, char *c);
 void    get_input(Data *data, char  *c);
 //************************* GET_SOLUTION.C ************************************
-
-int ignore_blanks_vertical(Data *data, int tet_tested);
-int ignore_blanks_horizontal(Data *data, int tet_tested);
-void    add_tetromino_to_sol(Data *data, int tet_tested, int v, int h);
+void    add_tetriminos_to_matrix(Data *data, int tetnum, int x, int y);
+int    backtrack_tetrimini_in_matrix(Data *data);
 
 //*************** INCLUDE_TETROMINOES_IN_MATRIX.C *****************************
 void    handle_return(Data *data, int *i, int *y, int *x);
 void    handle_new_tetriminion(Data *data, int *i, int *y, int *j);
-void    include_tetriminoes_in_matrix(Data *data);
+void    include_tetriminoes_to_matrix(Data *data);
 
 //************************ UPDATE.C *******************************************
 int col_isempty(Data *data, int tet_tested, int col_tested);

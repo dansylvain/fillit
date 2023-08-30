@@ -32,16 +32,27 @@ int main(int argc, char **argv)
     get_input(data, data->inputfile);
     if (!check_input(data, data->input))
          return (1);
-    data->tet = create_matrix(data);
+    data->tet = create_3Dmatrix(data);
     data->tet = initialize_matrix(data, data->tet);
-    include_tetriminoes_in_matrix(data);
+    include_tetriminoes_to_matrix(data);
     //display_tetrominos(data);
     if (!tetriminis_are_valid(data))
         return (1);
     update_matrix(data);
     display_matrix_update(data);
+    //create_sol_matrix(data, 10);
+    // display_solution(data, 10);
+    //add_tetriminos_to_matrix(data, 1, 0, 0);
+    //display_solution(data, 10);
+    //free_sol_matrix(data, 10);
+
         //TEST THINGS HERE!!!
-    
+    // backtrack_tetrimini_in_matrix(data);
+    //display_all_tetrimini_in_matrix(data);
+
+
+
+
 
     /* NOTE: les fonctions relatives aux fonctions ci-dessous
     n'ont pas été testées et peuvent être ignorées, si tu souhaites 
