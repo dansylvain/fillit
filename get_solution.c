@@ -45,9 +45,6 @@ void    remove_tetriminos(Data *data, int tet_index, int x, int y)
     {
         i = 0;
         x = x_tmp;
- printf("tet_size_y: %i, y: %i, j: %i, data->sol_size + 1: %i\n",tet_size_y, y, j, data->sol_size + 1);
- printf("tet_size_x: %i, x: %i, i: %i, data->sol_size + 1: %i\n",tet_size_x, x, i, data->sol_size + 1);
-printf("data->mat_update[tet_index][j][i]: %c\n", data->mat_update[tet_index][j][i]);
         while (i < tet_size_x && x < data->sol_size)
         {
             if (data->mat_update[tet_index][j][i] != '.')
@@ -62,15 +59,13 @@ printf("data->mat_update[tet_index][j][i]: %c\n", data->mat_update[tet_index][j]
     }
 }
 
-void    get_solution(Data *data, int tet_index)
+void    get_solution(Data *data, int tet_index, int x, int y)
 {
-    int x;
-    int y;
 
     if (tet_index == data->tetnum)
     {
         printf("Hourra!\n");
-        display_solution(data, data->sol_size);
+        //display_solution(data, data->sol_size);
         return;
     }
     y = 0;
@@ -82,8 +77,8 @@ void    get_solution(Data *data, int tet_index)
             if (can_place_tet(data, tet_index, x, y))
             {
                 add_tetriminos_to_matrix(data, tet_index, x, y);
-                display_solution(data, data->sol_size   );        
-                get_solution(data, tet_index + 1);
+                display_solution(data, data->sol_size);        
+                get_solution(data, tet_index + 1, 0, 0);
                 remove_tetriminos(data, tet_index, x, y);
             }
             x++;
