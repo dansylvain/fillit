@@ -21,17 +21,43 @@ int get_tet_size_x(char **tet)
 }
 
 
+int is_possible_to_add_tetrominos(Data *data, int tet, int x, int y)
+{
+    int tet_size_x;
+    int tet_size_y;
+    int i;
+    int j;
+
+
+    tet_size_x = get_tet_size_x(data->mat_update[tet]);
+    tet_size_y = get_tet_size_y(data->mat_update[tet]);
+    if (x + tet_size_x > data->sol_size || y + tet_size_y > data->sol_size)
+        return (0);
+    i = 0;
+    while (i < tet_size_y)
+    {
+        j = 0;
+        while (j < tet_size_x)
+        {
+            if (data->mat_update[tet][j][i] != '.' && data->sol[y][x] != '.')
+                return (0);
+            j++;
+            x++;
+        }
+        x -= tet_size_x;
+        i++;
+        y++;
+    }
+    return (1);
+}
+
 void    add_tetriminos_to_matrix(Data *data, int tet, int x, int y)
 {
     int i;
     int j;
-    int tet_size_x;
-    int tet_size_y;  
-    
-    tet_size_x = get_tet_size_x(data->mat_update[tet]);
-    tet_size_y = get_tet_size_y(data->mat_update[tet]);
+
     i = 0;
-    if (x + tet_size_x > data->sol_size || y + tet_size_y > data->sol_size)
+    if (!is_possible_to_add_tetrominos(data, tet, x, y))
         return;
     while (i < 4)
     {
@@ -44,8 +70,6 @@ void    add_tetriminos_to_matrix(Data *data, int tet, int x, int y)
         }
         i++;
     }
-    (void)tet_size_x;
-    (void)tet_size_y;
 }
 
 void    check_func_add_tetriminos_to_matrix(Data *data)

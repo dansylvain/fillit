@@ -12,11 +12,11 @@ int can_place_tet(Data *data, int tet_index, int x, int y)
     tet_size_x = get_tet_size_x(data->mat_update[tet_index]);
     tet_size_y = get_tet_size_y(data->mat_update[tet_index]);
     j = 0;
-    while (j < tet_size_y && y + j < data->sol_size)
+    while (j < tet_size_y && y < data->sol_size)
     {
         i = 0;
         x = x_tmp;
-        while (i < tet_size_x && x + i < data->sol_size)
+        while (i < tet_size_x && x < data->sol_size)
         {
             if (data->sol[y][x] != '.' && data->mat_update[tet_index][j][i] != '.')
                 return (0);
@@ -77,6 +77,7 @@ void    get_solution(Data *data, int tet_index, int x, int y)
             if (can_place_tet(data, tet_index, x, y))
             {
                 add_tetriminos_to_matrix(data, tet_index, x, y);
+                printf("tet n°: %i, x: %i, y: %i\n", tet_index, x, y);
                 display_solution(data, data->sol_size);        
                 get_solution(data, tet_index + 1, 0, 0);
                 remove_tetriminos(data, tet_index, x, y);

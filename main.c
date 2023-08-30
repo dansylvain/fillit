@@ -44,14 +44,8 @@ int main(int argc, char **argv)
     //************ TEST THINGS HERE!!! *****************
     data->sol_size = ft_sqrt(data->tetnum * 4);
     create_sol_matrix(data, data->sol_size);
-    add_tetriminos_to_matrix(data, 0, 1, 0);
-    display_solution(data, data->sol_size);
-    
-    
-    
-    // remove_tetriminos(data, 0, 1, 0);
-    // display_solution(data, data->sol_size);
-    // get_solution(data, 0, 0, 0);
+
+    get_solution(data, 0, 0, 0);
 
 
     // create_sol_matrix(data, 10);

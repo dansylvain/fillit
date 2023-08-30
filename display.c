@@ -12,10 +12,10 @@ void    display_all_tetrimini_in_matrix(Data *data)
     i = 0;
     while (i < data->tetnum)
     {
-        create_sol_matrix(data, 6);
-        add_tetriminos_to_matrix(data, i, 0, 0);
-        display_solution(data, 6);
-        free_sol_matrix(data, 6);
+        // create_sol_matrix(data, 6);
+        // add_tetriminos_to_matrix(data, i, 0, 0);
+        // display_solution(data, 6);
+        // free_sol_matrix(data, 6);
         i++;
     }
 }
