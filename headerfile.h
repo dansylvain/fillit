@@ -19,6 +19,14 @@ typedef struct {
    int   sol_size;
 } Data;
 
+
+int get_tet_size_y(char **tet);
+int get_tet_size_x(char **tet);
+void    add_tetriminos_to_matrix(Data *data, int tet, int x, int y);
+int can_place_tet(Data *data, int tet_index, int x, int y);
+
+
+
 //*********************** check_tetriminis_validity.C *************************
 int is_next_to_another_bloc(char **tet, int x, int  y);
 int blocs_are_valid(char **tet);
@@ -54,8 +62,8 @@ int ft_sqrt(int nb);
 int    check_input(Data *data, char *c);
 void    get_input(Data *data, char  *c);
 //************************* GET_SOLUTION.C ************************************
-void    add_tetriminos_to_matrix(Data *data, int tetnum, int x, int y);
-int    backtrack_tetrimini_in_matrix(Data *data);
+void    check_func_add_tetriminos_to_matrix(Data *data);
+void    get_solution(Data *data, int tet_index);
 
 //*************** INCLUDE_TETROMINOES_IN_MATRIX.C *****************************
 void    handle_return(Data *data, int *i, int *y, int *x);

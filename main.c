@@ -39,16 +39,20 @@ int main(int argc, char **argv)
     if (!tetriminis_are_valid(data))
         return (1);
     update_matrix(data);
-    display_matrix_update(data);
-    //create_sol_matrix(data, 10);
-    // display_solution(data, 10);
-    //add_tetriminos_to_matrix(data, 1, 0, 0);
-    //display_solution(data, 10);
-    //free_sol_matrix(data, 10);
+    //display_matrix_update(data);
 
-        //TEST THINGS HERE!!!
-    // backtrack_tetrimini_in_matrix(data);
-    //display_all_tetrimini_in_matrix(data);
+    //************ TEST THINGS HERE!!! *****************
+    create_sol_matrix(data, 4);
+    can_place_tet(data, 0, 0, 0);
+    get_solution(data, 0);
+
+
+    // create_sol_matrix(data, 10);
+    // add_tetriminos_to_matrix(data, 0, 0, 0);
+    // display_solution(data, 10);
+    // free_sol_matrix(data, 10);
+    //check_func_add_tetriminos_to_matrix(data);
+
 
 
 
