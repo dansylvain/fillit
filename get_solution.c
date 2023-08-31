@@ -1,5 +1,14 @@
 #include "headerfile.h"
 
+int is_letter(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return (1);
+    else
+        return (0);
+}
+
+
 int can_place_tet(Data *data, int tet_index, int x, int y)
 {
     int i;
@@ -11,6 +20,10 @@ int can_place_tet(Data *data, int tet_index, int x, int y)
     x_tmp = x;
     tet_size_x = get_tet_size_x(data->mat_update[tet_index]);
     tet_size_y = get_tet_size_y(data->mat_update[tet_index]);
+    printf("size_x: %i, size_y: %i, x: %i, y : %i\n",tet_size_x, tet_size_y, x, y);
+    printf("sol_size: %i\n", data->sol_size);
+    if (y + tet_size_y > data->sol_size || x + tet_size_x > data->sol_size)
+        return (0);
     j = 0;
     while (j < tet_size_y && y < data->sol_size)
     {
@@ -18,8 +31,12 @@ int can_place_tet(Data *data, int tet_index, int x, int y)
         x = x_tmp;
         while (i < tet_size_x && x < data->sol_size)
         {
-            if (data->sol[y][x] != '.' && data->mat_update[tet_index][j][i] != '.')
-                return (0);
+
+            if (is_letter(data->sol[y][x]) && is_letter(data->mat_update[tet_index][j][i]))
+                {
+                    printf("function triggered\n");
+                    return (0);
+                }
             x++;
             i++;
         }
@@ -59,14 +76,16 @@ void    remove_tetriminos(Data *data, int tet_index, int x, int y)
     }
 }
 
-void    get_solution(Data *data, int tet_index, int x, int y)
+void    get_solution(Data *data, int tet_index)
 {
-
+    int y;
+    int x;
+    //printf("debut de fonction, tetindex = %i\n", tet_index);
     if (tet_index == data->tetnum)
     {
-        printf("Hourra!\n");
-        //display_solution(data, data->sol_size);
-        return;
+        display_solution(data, data->sol_size);
+        printf ("solution found!\n");
+        exit (0);
     }
     y = 0;
     while (y < data->sol_size)
@@ -74,17 +93,24 @@ void    get_solution(Data *data, int tet_index, int x, int y)
         x = 0;
         while (x < data->sol_size)
         {
+            //printf("entering the loop...\n");
+            printf("tet: %i, x: %i, y: %i\n", tet_index, x, y);
+                            usleep(10);
+
             if (can_place_tet(data, tet_index, x, y))
             {
+                printf("entering the canplacetet function\n");
                 add_tetriminos_to_matrix(data, tet_index, x, y);
+                display_solution(data, data->sol_size);
+                usleep(10);
+                printf("tetnum++! (tetindex: %i)\n", tet_index);
+                usleep(10);
+                get_solution(data, tet_index + 1);
                 printf("tet n°: %i, x: %i, y: %i\n", tet_index, x, y);
-                display_solution(data, data->sol_size);        
-                get_solution(data, tet_index + 1, 0, 0);
                 remove_tetriminos(data, tet_index, x, y);
             }
             x++;
         }  
         y++;
-    }
-
+    }   
 }

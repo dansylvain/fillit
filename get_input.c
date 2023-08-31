@@ -36,7 +36,6 @@ int    check_input(Data *data, char *c)
     }
     if (l == 0 || l > 25)
         return (0);
-    printf("tetnum = %i\n", l);
     data->tetnum = l;
     return (1);
 }

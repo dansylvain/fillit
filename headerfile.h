@@ -6,6 +6,8 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+
+
 #define MAX 1024
 
 typedef struct {
@@ -65,8 +67,8 @@ int    check_input(Data *data, char *c);
 void    get_input(Data *data, char  *c);
 //************************* GET_SOLUTION.C ************************************
 void    check_func_add_tetriminos_to_matrix(Data *data);
-void    get_solution(Data *data, int tet_index, int x, int y);
-
+void    get_solution(Data *data, int tet_index);
+int can_place_tet(Data *data, int tet_index, int x, int y);
 //*************** INCLUDE_TETROMINOES_IN_MATRIX.C *****************************
 void    handle_return(Data *data, int *i, int *y, int *x);
 void    handle_new_tetriminion(Data *data, int *i, int *y, int *j);
