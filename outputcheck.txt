@@ -12,24 +12,229 @@ AABB
 AABB
 .ABB
 .A..
+CCCC
+
+AA..
+.ABB
+.ABB
 ....
 
+AA..
+.ABB
+.ABB
+CCCC
+
+AA..
+.A..
+.ABB
+..BB
+
+.AA.
+..A.
+..A.
+....
+
+.AA.
+BBA.
+BBA.
+....
+
+.AA.
+BBA.
+BBA.
+CCCC
+
+.AA.
+..A.
+BBA.
+BB..
+
+..AA
+...A
+...A
+....
+
+BBAA
+BB.A
+...A
+....
+
+BBAA
+BB.A
+...A
+CCCC
+
+..AA
+BB.A
+BB.A
+....
+
+..AA
+BB.A
+BB.A
+CCCC
+
+..AA
+.BBA
+.BBA
+....
+
+..AA
+.BBA
+.BBA
+CCCC
+
+..AA
+.BBA
+.BBA
+CCCC
+
+..AA
+.BBA
+.BBA
+CCCC
+
+..AA
+...A
+BB.A
+BB..
+
+..AA
+...A
+.BBA
+.BB.
+
+....
+AA..
+.A..
+.A..
+
+..BB
+AABB
+.A..
+.A..
+
+....
 AABB
 .ABB
 .A..
-....
 
+CCCC
 AABB
 .ABB
 .A..
+
 ....
-debut de fonction, tetindex = 0
-tetnum++! (tetindex: 0)
-debut de fonction, tetindex = 1
-tetnum++! (tetindex: 1)
-debut de fonction, tetindex = 2
-tetnum++! (tetindex: 2)
-debut de fonction, tetindex = 3
-tetnum++! (tetindex: 3)
-debut de fonction, tetindex = 4
+AA..
+.ABB
+.ABB
+
+CCCC
+AA..
+.ABB
+.ABB
+
+....
+.AA.
+..A.
+..A.
+
+....
+.AA.
+BBA.
+BBA.
+
+CCCC
+.AA.
+BBA.
+BBA.
+
+....
+..AA
+...A
+...A
+
+BB..
+BBAA
+...A
+...A
+
+....
+BBAA
+BB.A
+...A
+
+CCCC
+BBAA
+BB.A
+...A
+
+....
+..AA
+BB.A
+BB.A
+
+CCCC
+..AA
+BB.A
+BB.A
+
+....
+..AA
+.BBA
+.BBA
+
+CCCC
+..AA
+.BBA
+.BBA
+
+CCCC
+..AA
+.BBA
+.BBA
+
+CCCC
+..AA
+.BBA
+.BBA
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+solution found!
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
+entering the canplacetet function
 solution found!

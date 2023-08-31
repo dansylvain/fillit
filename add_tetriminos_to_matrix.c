@@ -57,7 +57,7 @@ void    add_tetriminos_to_matrix(Data *data, int tet, int x, int y)
     int j;
 
     i = 0;
-    if (!is_possible_to_add_tetrominos(data, tet, x, y))
+    if (!can_place_tet(data, tet, x, y))
         return;
     while (i < 4)
     {

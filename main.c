@@ -46,9 +46,7 @@ int main(int argc, char **argv)
     create_sol_matrix(data, data->sol_size);
     //add_tetriminos_to_matrix(data, 0, 0, 0);
 
-
-    
-    //get_solution(data, 0);
+    get_solution(data, 0);
 
 
     // create_sol_matrix(data, 10);
