@@ -155,27 +155,83 @@ int     ft_move_tetrim(int mat_size, int n_tetrim, int i_tetrim, char tetrim, ch
     return (1); 
 }
 
+void    ft_save_sol(int mat_size, int n_tetrim, char sol[mat_size][mat_size][n_tetrim], char saved_sol[mat_size][mat_size][n_tetrim])
+{    
+    int     i;
+    int     j;
+    int     k;
+
+    i = 0;
+    j = 0;
+    k = 0;
+    while (i < mat_size)
+    {
+        while (j < mat_size)
+        {
+            while (k < n_tetrim)
+            {
+                saved_sol[i][j][k] = sol[i][j][k];
+                k++;
+            }
+            k = 0;
+            j++;
+        }
+        j = 0;
+        i++;        
+    }        
+}
+
+void    ft_unmove_tetrim(int mat_size, int n_tetrim, int i_tetrim, char sol[mat_size][mat_size][n_tetrim], char saved_sol[mat_size][mat_size][n_tetrim])
+{
+    int     i;
+    int     j;
+
+    i = 0;
+    j = 0;
+    while (i < mat_size)
+    {
+        while (j < mat_size)
+        {
+            saved_sol[i][j][i_tetrim] = sol[i][j][i_tetrim];
+            j++;
+        }
+        j = 0;
+        i++;
+    }    
+}
+
 int     ft_rec_search_solution(int mat_size, int n_tetrim, int i_tetrim, char tetrim, char sol[mat_size][mat_size][n_tetrim])
 {   
     int     i;
-
+    char saved_sol[mat_size][mat_size][n_tetrim];
+    
+    ft_save_sol(mat_size, n_tetrim, sol ,saved_sol);
+    tetrim = 'A';
+    i_tetrim = 0;
     i = 0;    
     ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);
     if (ft_move_tetrim(mat_size, n_tetrim, i_tetrim, tetrim, sol))
-    {            
+    {   
+        ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);     
         ft_rec_search_solution(mat_size, n_tetrim, i_tetrim, tetrim, sol); 
     }
-    if (tetrim > 'A')    
+    else 
     {
-        tetrim--;
-        i_tetrim--;
-        ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);
-        if (ft_move_tetrim(mat_size, n_tetrim, i_tetrim, tetrim, sol))
-        {            
-            ft_rec_search_solution(mat_size, n_tetrim, i_tetrim, tetrim, sol); 
-        }      
     }
-         
+    //ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);
+    ft_unmove_tetrim(mat_size, n_tetrim, i_tetrim, sol, saved_sol);
+    tetrim++;
+    i_tetrim++;        
+    if (ft_move_tetrim(mat_size, n_tetrim, i_tetrim, tetrim, sol))
+    {   
+        ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);     
+        ft_rec_search_solution(mat_size, n_tetrim, i_tetrim, tetrim, sol); 
+    }
+    else 
+    {      
+    }
+    ft_unmove_tetrim(mat_size, n_tetrim, i_tetrim, sol, saved_sol);     
+    ft_print_sol(mat_size, n_tetrim, i_tetrim, sol);
     i++;         
     return (1);
 }
@@ -184,8 +240,7 @@ int     ft_launch_recursive(int mat_size, int n_tetrim, int tetrim, char sol[mat
 {    
     int     i_tetrim;
 
-    i_tetrim = ft_get_i_tetrim(tetrim);
-  //  printf("%d", i_tetrim);
+    i_tetrim = ft_get_i_tetrim(tetrim);  
     ft_rec_search_solution(mat_size, n_tetrim, i_tetrim, tetrim, sol);
 }
 
