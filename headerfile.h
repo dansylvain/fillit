@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 
@@ -60,7 +61,7 @@ void    free_sol_matrix(Data *data, int size);
 //***************************** FUNC.C ****************************************
 void    ft_putchar(char c);
 int ft_sqrt(int nb);
-
+int is_letter(char c);
 //************************* GET_INPUT.C ***************************************
 int    check_input(Data *data, char *c);
 void    get_input(Data *data, char  *c);

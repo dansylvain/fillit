@@ -5,6 +5,29 @@ void    display_error(void)
     write (1, "Error.\n", 7);
 }
 
+void    display_solution(Data *data, int size)
+{
+    int x;
+    int y;
+
+    y = 0;
+    while (y < size)
+    {
+        x = 0;
+        while (x < size)
+        {
+            write (1, &data->sol[y][x], 1);
+            x++;
+        }
+        write (1, "\n", 1);
+        y++;
+    }
+}
+
+// *********************************************************************
+// toutes les fonctions suivantes ne sont utiles que pour tester le code
+// *********************************************************************
+
 void    display_all_tetrimini_in_matrix(Data *data)
 {
     int i;
@@ -17,26 +40,6 @@ void    display_all_tetrimini_in_matrix(Data *data)
         // display_solution(data, 6);
         // free_sol_matrix(data, 6);
         i++;
-    }
-}
-
-void    display_solution(Data *data, int size)
-{
-    int x;
-    int y;
-
-    write (1, "\n", 1);
-    y = 0;
-    while (y < size)
-    {
-        x = 0;
-        while (x < size)
-        {
-            write (1, &data->sol[y][x], 1);
-            x++;
-        }
-        write (1, "\n", 1);
-        y++;
     }
 }
 
@@ -81,7 +84,6 @@ void    display_tetrominos(Data *data)
 
 }
 
-
 void    display_tetromino_update(Data *data, int tet_winner)
 {
     int x;
@@ -103,7 +105,6 @@ void    display_tetromino_update(Data *data, int tet_winner)
         y++;
     }
 }
-
 
 void    display_matrix_update(Data *data)
 {

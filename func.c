@@ -16,9 +16,15 @@ int ft_sqrt(int nb)
     return (res);
 }
 
-
 void    ft_putchar(char c)
 {
     write (1, &c, 1);
 }
 
+int is_letter(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+        return (1);
+    else
+        return (0);
+}

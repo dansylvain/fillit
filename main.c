@@ -2,16 +2,6 @@
 
 int    check_args(Data *data, int argc, char **argv)
 {
-    //************* REMOVE WHEN PROJECT IS COMPLETE !!! ***********
-    if (argc == 1)
-    {
-        data->inputfile = "extern_file.txt";
-        return (1);
-    }
-
-
-
-    //*************************************************************
     if (argc != 2)
     {
         display_error();
@@ -21,6 +11,30 @@ int    check_args(Data *data, int argc, char **argv)
     return (1);
 }
 
+/*
+    Enfin!
+    Le programme a l'air de fonctionner. Je n'ai pas testé sous toutes les coutures,
+    mais c'est tout de même du solide. Il n'y a plus aucun bug à ma connaissance.
+    Le problème, maintenant, c'est que la recherche d'une solution devient 
+    TTRRRREEEEESSS longue une fois qu'on dépasse les 12 - 13 tetriminos.
+
+    moi perso, je m'en acomode pour maintenant parce que ça fonctionne, merde.
+    La prochaine chose que je souhaite encore faire pour terminer ce projet de 
+    mon côté, c'est tout mettre à la norme. Mais de ce côté là, il n'y a plus
+    beaucoup de boulot. Il reste quatre fonctions qui sont une peu
+    trop longue (check_input, can_place_tet, remove_tetriminos, get_solution).
+
+    Après, si jamais je dois me faire évaluer pour ce projet, j'imagine qu'il faudra
+    que je reprenne tout, en partant du Makefile jusqu'à l'optimisation. Pt'et même
+    d'ailleurs que la mise à la norm je ne la ferais que dans ce cas précis.
+
+    N'hésite pas à jeter un oeil à mon code et je te serais reconnaissant de
+    me signaler les choses que tu ne comprends pas :)
+    Je n'ai pas écrit une suele ligne de commentaire...
+
+    Aussi, teste le programme, met lui en plein la poire, fais le pleurer, et dis moi
+    si tu trouves des erreurs (mis à part le cas des recherches trrooppp longues) 
+*/
 
 int main(int argc, char **argv)
 {
@@ -35,50 +49,11 @@ int main(int argc, char **argv)
     data->tet = create_3Dmatrix(data);
     data->tet = initialize_matrix(data, data->tet);
     include_tetriminoes_to_matrix(data);
-    //display_tetrominos(data);
     if (!tetriminis_are_valid(data))
         return (1);
     update_matrix(data);
-    //display_matrix_update(data);
-
-    //************ TEST THINGS HERE!!! *****************
     data->sol_size = ft_sqrt(data->tetnum * 4);
     create_sol_matrix(data, data->sol_size);
-    //add_tetriminos_to_matrix(data, 0, 0, 0);
-
     get_solution(data, 0);
-
-
-    // create_sol_matrix(data, 10);
-    // free_sol_matrix(data, 10);
-    //check_func_add_tetriminos_to_matrix(data);
-
-
-
-
-
-
-    /* NOTE: les fonctions relatives aux fonctions ci-dessous
-    n'ont pas été testées et peuvent être ignorées, si tu souhaites 
-    commencer ton algo sur des bases "neuves".
-
-    En compilant et en executant le code ci-dessus, tu a un aperçu du contenu de
-    la matrice data->mat_update. compile avec 'make' ;).
-    Chaque Tetriminos fait 4x4 et est le plus "à gauche en haut" possible.
-
-    La validité de l'input est testée: qualité des charactères, validité des tetriminos, 
-    formatage de l'input.
-    En cas d'erreur, un message est affiché et un code erreur retourné
-
-    NOTE: j'ai remarqué que lorsque je compile avec le makefile, je n'obtiens pas toujours
-    les mêmes messages d'erreurs que j'obtiens en compilant directement avec gcc. 
-    */
-
-    // create_sol_matrix(data);
-    //display_solution(data);
-    //add_tetromino_to_sol(data, 2, 0, 0);
-    //display_solution(data);
-
-    free_everything(data);
     return (0);
 }

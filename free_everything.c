@@ -34,6 +34,7 @@ void    free_everything(Data *data)
 {
     free_matrix(data->tet, data->tetnum);
     free_matrix(data->mat_update, data->tetnum);
+    free_sol_matrix(data, data->sol_size);
     free(data->input);
     free(data);
 }

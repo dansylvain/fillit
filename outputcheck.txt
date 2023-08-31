@@ -1,240 +1,1651 @@
-
-AA..
-.A..
-.A..
-....
-
-AABB
-.ABB
-.A..
-....
-
-AABB
-.ABB
-.A..
-CCCC
-
-AA..
-.ABB
-.ABB
-....
-
-AA..
-.ABB
-.ABB
-CCCC
-
-AA..
-.A..
-.ABB
-..BB
-
-.AA.
-..A.
-..A.
-....
-
-.AA.
-BBA.
-BBA.
-....
-
-.AA.
-BBA.
-BBA.
-CCCC
-
-.AA.
-..A.
-BBA.
-BB..
-
-..AA
-...A
-...A
-....
-
-BBAA
-BB.A
-...A
-....
-
-BBAA
-BB.A
-...A
-CCCC
-
-..AA
-BB.A
-BB.A
-....
-
-..AA
-BB.A
-BB.A
-CCCC
-
-..AA
-.BBA
-.BBA
-....
-
-..AA
-.BBA
-.BBA
-CCCC
-
-..AA
-.BBA
-.BBA
-CCCC
-
-..AA
-.BBA
-.BBA
-CCCC
-
-..AA
-...A
-BB.A
-BB..
-
-..AA
-...A
-.BBA
-.BB.
-
-....
-AA..
-.A..
-.A..
-
-..BB
-AABB
-.A..
-.A..
-
-....
-AABB
-.ABB
-.A..
-
-CCCC
-AABB
-.ABB
-.A..
-
-....
-AA..
-.ABB
-.ABB
-
-CCCC
-AA..
-.ABB
-.ABB
-
-....
-.AA.
-..A.
-..A.
-
-....
-.AA.
-BBA.
-BBA.
-
-CCCC
-.AA.
-BBA.
-BBA.
-
-....
-..AA
-...A
-...A
-
-BB..
-BBAA
-...A
-...A
-
-....
-BBAA
-BB.A
-...A
-
-CCCC
-BBAA
-BB.A
-...A
-
-....
-..AA
-BB.A
-BB.A
-
-CCCC
-..AA
-BB.A
-BB.A
-
-....
-..AA
-.BBA
-.BBA
-
-CCCC
-..AA
-.BBA
-.BBA
-
-CCCC
-..AA
-.BBA
-.BBA
-
-CCCC
-..AA
-.BBA
-.BBA
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-solution found!
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-entering the canplacetet function
-solution found!
+tet_index: 0
+tet_index: 1
+tet_index: 2
+tet_index: 3
+tet_index: 4
+tet_index: 5
+tet_index: 6
+tet_index: 7
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 7
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 7
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 7
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 8
+tet_index: 9
+tet_index: 10
+teAABBCCCC
+.ABBDDEE
+.A..D.EE
+FFFFDGG.
+IIII.GHH
+JJ.MMGHH
+JKKMLLLL
+JKKMNNNN
+t_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 10
+tet_index: 10
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 10
+tet_index: 11
+tet_index: 12
+tet_index: 7
+tet_index: 8
+tet_index: 9
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 11
+tet_index: 10
+tet_index: 11
+tet_index: 11
+tet_index: 12
+tet_index: 13
