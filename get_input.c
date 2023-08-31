@@ -8,7 +8,7 @@ int    check_input(Data *data, char *c)
 
     j = 0;  // letter counter (tetriminos level)
     k = 0;  // line counter
-    l = 0;  // tetriminos counter
+    l = 1;  // tetriminos counter
     while (*c)
     {
         if (*c != '.' && *c != '#' && *c != '\n')
@@ -23,8 +23,11 @@ int    check_input(Data *data, char *c)
             j = 0;
         }
         if (*c == '\n' && *(c -1) == '\n' && k != 5)
-                return (0);
-        if (*c  == '\n' && *(c - 1) == '\n')
+        {
+            return (1);
+        }
+
+        if ((*c  == '\n' && *(c - 1) == '\n'))
         {
             k = 0;
             l++;
@@ -33,7 +36,8 @@ int    check_input(Data *data, char *c)
     }
     if (l == 0 || l > 25)
         return (0);
-    data->tetnum = l + 1;
+    printf("tetnum = %i\n", l);
+    data->tetnum = l;
     return (1);
 }
 
