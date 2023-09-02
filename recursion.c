@@ -235,7 +235,15 @@ void    unmove_tetrim(int mat_size, int n_tetrim, int i_tetrim, char sol[mat_siz
         i++;        
     }     
 }
-int stop = 0;
+int ov = 0;
+int     ft_is_overlapping()
+{
+    ov++;
+    if (ov > 2)
+        return (1);
+    return (0);
+}
+
 int     ft_rec_search_solution(int mat_size, int n_tetrim, char sol[mat_size][mat_size][n_tetrim], char initial_sol[mat_size][mat_size][n_tetrim])
 {   
     int     i_tetrim;
@@ -246,9 +254,13 @@ int     ft_rec_search_solution(int mat_size, int n_tetrim, char sol[mat_size][ma
     {        
         if (ft_move_tetrim(mat_size, n_tetrim, i_tetrim, sol))
         {           
-            ft_print_all_sol(mat_size, n_tetrim, sol);     
+            ft_print_all_sol(mat_size, n_tetrim, sol);
+            if (ft_is_overlapping(mat_size, n_tetrim, sol))
+                return (0);     
             if (ft_rec_search_solution(mat_size, n_tetrim, sol, initial_sol))
-                return (1);        
+                return (1);
+            else 
+                return (0);            
         }
         else 
             ft_reset_tetrim(mat_size, n_tetrim, i_tetrim, sol, initial_sol);   
@@ -259,7 +271,11 @@ int     ft_rec_search_solution(int mat_size, int n_tetrim, char sol[mat_size][ma
 
 int     ft_launch_recursive(int mat_size, int n_tetrim, char sol[mat_size][mat_size][n_tetrim], char initial_sol[mat_size][mat_size][n_tetrim])
 {      
-    ft_rec_search_solution(mat_size, n_tetrim, sol, initial_sol);
+   while (ft_rec_search_solution(mat_size, n_tetrim, sol, initial_sol))
+   {
+        write(1, "no solution\n", 12);
+   }
+   write(1, "solution!\n", 10);
 }
 
 int     main(void)
